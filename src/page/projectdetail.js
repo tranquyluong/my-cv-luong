@@ -6,7 +6,7 @@ const projectdetail = ({ id }) => {
     useEffect(() => {
 
 
-        axios.get(`https://3o433y-8080.preview.csb.app/api/project/${id}`).then(({ data }) => setproject(data))
+        axios.get(`https://lqm2cu-8080.preview.csb.app/api/project/${id}`).then(({ data }) => setproject(data))
 
 
     })

@@ -5,7 +5,7 @@ const adminproductPage = () => {
     const [project, setproject] = useState([]);
     useEffect(() => {
 
-        axios.get("https://3o433y-8080.preview.csb.app/api/project").then(({ data }) => setproject(data))
+        axios.get("https://lqm2cu-8080.preview.csb.app/api/project").then(({ data }) => setproject(data))
     }, [])
     useEffect(() => {
         const btns = document.querySelectorAll(".btn-remove");
@@ -13,7 +13,7 @@ const adminproductPage = () => {
             btn.addEventListener("click", function (e) {
                 e.preventDefault();
                 const id = this.dataset.id;
-                axios.delete(`https://3o433y-8080.preview.csb.app/api/project/${id}`).then(() => {
+                axios.delete(`hhttps://lqm2cu-8080.preview.csb.app/api/project/${id}`).then(() => {
                     const newProject = project.filter((project) => project.id !== +id);
                     setproject(newProject);
                 })

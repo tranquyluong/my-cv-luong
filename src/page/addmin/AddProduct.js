@@ -21,7 +21,7 @@ const AddProduct = () => {
                 gallery: urls,
                 projectdate: projectdate.value
             };
-            axios.post("https://3o433y-8080.preview.csb.app/api/project", newProject).then(() => {
+            axios.post("https://lqm2cu-8080.preview.csb.app/api/project", newProject).then(() => {
                 router.navigate("/Admin/project");
             })
         });

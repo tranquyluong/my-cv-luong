@@ -5,7 +5,7 @@ import nav from "../components/nav"
 const blog = () => {
     const [blogs, setblog] = useState([]);
     useEffect(() => {
-        fetch("https://3o433y-8080.preview.csb.app/api/blog").then(res => res.json())
+        fetch("https://lqm2cu-8080.preview.csb.app/api/blogs").then(res => res.json())
             .then(data => setblog(data))
     }, [])
     return `    <!-- CONTAINER -->

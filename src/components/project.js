@@ -4,7 +4,7 @@ const product = () => {
 
   const [project, setproject] = useState([]);
   useEffect(() => {
-    fetch("https://3o433y-8080.preview.csb.app/api/project").then(res => res.json()).then(project => setproject(project));
+    fetch("https://lqm2cu-8080.preview.csb.app/api/project").then(res => res.json()).then(project => setproject(project));
 
   }, []);
 
