@@ -6,7 +6,7 @@ const projectdetail = ({ id }) => {
     useEffect(() => {
 
 
-        axios.get(`http://localhost:3000/project/${id}`).then(({ data }) => setproject(data))
+        axios.get(`https://2b2erc-8080.preview.csb.app/api/project/${id}`).then(({ data }) => setproject(data))
 
 
     })

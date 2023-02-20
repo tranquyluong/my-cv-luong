@@ -6,7 +6,7 @@ import nav from "./nav";
 const Harder = () => {
     const [user, setuesr] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:3000/user").then(({ data }) => setuesr(data));
+        axios.get("https://2b2erc-8080.preview.csb.app/api/user").then(({ data }) => setuesr(data));
 
     }, []);
 

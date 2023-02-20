@@ -18,7 +18,7 @@ const contact = () => {
                 phone: phone.value,
                 description: description.value
             };
-            axios.post("http://localhost:3000/contacts", newcontact);
+            axios.post("https://2b2erc-8080.preview.csb.app/api/contacts", newcontact);
             alert("Gửi thành công ")
         });
     })

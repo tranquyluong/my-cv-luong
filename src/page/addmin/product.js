@@ -13,7 +13,7 @@ const adminproductPage = () => {
             btn.addEventListener("click", function (e) {
                 e.preventDefault();
                 const id = this.dataset.id;
-                axios.delete(` http://localhost:3000/project/${id}`).then(() => {
+                axios.delete(`https://2b2erc-8080.preview.csb.app/api/project/${id}`).then(() => {
                     const newProject = project.filter((project) => project.id !== +id);
                     setproject(newProject);
                 })

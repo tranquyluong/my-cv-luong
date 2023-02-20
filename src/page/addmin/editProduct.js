@@ -7,7 +7,7 @@ const editProduct = ({ id }) => {
     const [project, setProject] = useState({});
 
     useEffect(() => {
-        axios.get("http://localhost:3000/project/" + id).then(({ data }) => setProject(data));
+        axios.get("https://2b2erc-8080.preview.csb.app/api/project/" + id).then(({ data }) => setProject(data));
     }, []);
     useEffect(() => {
         const form = document.querySelector("#form-edit");
@@ -24,7 +24,7 @@ const editProduct = ({ id }) => {
                 description: projectdescription.value,
                 image: image.value,
             };
-            axios.put(`http://localhost:3000/project/" + id`, newProject).then(() => {
+            axios.put(`https://2b2erc-8080.preview.csb.app/api/project/" + id`, newProject).then(() => {
                 router.navigate("/Admin/project");
             })
 
