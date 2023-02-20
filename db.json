@@ -1,0 +1,95 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Trần Quý Lương ",
+      "date": "12 Feb 2021 ",
+      "description": "Hiện tại, mình đang là sinh viên kì 5 tại trường FPT Polytechnic. Mình bắt đầu học lập trình từ tháng 10 năm ngoái và phần lớn thời gian trong ngày mình đều ngồi học code. Ngoài việc học tập trên trường thì mình thường xuyên học thêm trên F8 Fullstack và trên các kênh Youtube như evondev, easy frontend, ... Mình thực sự thích code và thử thách bản thân học được nhiều cái mới vào mỗi ngày mới. Mục tiêu hiện tại của mình là trở thành một lập trình viên Frontend.",
+      "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1654235294/280506188_1138943049998807_5392473630503021645_n_rtgk2f.jpg"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "title": "HTML",
+      "date": "12 Feb 2021 ",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "id": 2,
+      "title": "JS",
+      "date": "12 Feb 2021 ",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    }
+  ],
+  "project": [
+    {
+      "title": "Dự án mẫu",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet\nsint.\n Velit\nofficia consequat\n duis enim velit\n mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "image": "C:\\fakepath\\html.png",
+      "gallery": [
+        "https://res.cloudinary.com/dndyxqosg/image/upload/v1676794544/Upload-my-cv/yxkrx8sczazu80ni7wme.png"
+      ],
+      "projectdate": "2020",
+      "id": 1,
+      "category": 1
+    },
+    {
+      "title": "Dự án 1",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet\nsint.\n Velit\nofficia consequat\n duis enim velit\n mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "image": "C:\\fakepath\\js.png",
+      "gallery": [
+        "https://res.cloudinary.com/dndyxqosg/image/upload/v1676794723/Upload-my-cv/lldlhctbeiyr0vem6n0q.png"
+      ],
+      "projectdate": "2022",
+      "id": 2,
+      "category": 1
+    },
+    {
+      "title": "ECMA",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet\nsint.\n Velit\n  officia consequat\nduis enim velit\n  mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "image": "C:\\fakepath\\Ecma.png",
+      "gallery": [
+        "https://res.cloudinary.com/dndyxqosg/image/upload/v1676794763/Upload-my-cv/bogdtoq18vxmnaswqc7n.png"
+      ],
+      "projectdate": "2023",
+      "id": 3,
+      "category": 2
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Trần quý Lương",
+      "email": "tranquyluong1234@gmail.com",
+      "phone": "0325932836",
+      "id": 1
+    },
+    {
+      "name": "Trần quý Lương",
+      "email": "tranquyluong1234@gmail.com",
+      "phone": "0325932836",
+      "description": "etTQEW",
+      "id": 2
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Ui/Ux Designer",
+      "url": "https://www.toptal.com/",
+      "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1676888980/Upload-my-cv/Screenshot_20230220_052650_bs8xwm.png"
+    },
+    {
+      "id": 2,
+      "title": "Frontend Developer",
+      "url": "https://topdev.vn/",
+      "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1676888975/Upload-my-cv/Screenshot_20230220_052851_mewcvk.png"
+    },
+    {
+      "id": 3,
+      "title": "Branding Designer",
+      "url": "https://www.jessicajonesdesign.com/",
+      "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1676888974/Upload-my-cv/Screenshot_20230220_052729_on5dm5.png"
+    }
+  ]
+}
