@@ -24,7 +24,7 @@ const editProduct = ({ id }) => {
                 description: projectdescription.value,
                 image: image.value,
             };
-            axios.put(`https://2b2erc-8080.preview.csb.app/api/project/" + id`, newProject).then(() => {
+            axios.put(`https://3o433y-8080.preview.csb.app/api/project/" + id`, newProject).then(() => {
                 router.navigate("/Admin/project");
             })
 

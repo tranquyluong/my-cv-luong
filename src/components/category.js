@@ -3,7 +3,7 @@ import { useEffect, useState } from "../../lib";
 const category = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch("https://2b2erc-8080.preview.csb.app/api/category").then(res => res.json()).then(data => setData(data));
+        fetch("https://3o433y-8080.preview.csb.app/api/category").then(res => res.json()).then(data => setData(data));
 
     }, []);
     return `       <div class="w-full bg-[#EDF7FA] mt-9 ">
