@@ -10,6 +10,7 @@ const AddProduct = () => {
         const projectdescription = document.querySelector("#project-description");
         const image = document.querySelector("#image-add");
         const projectdate = document.querySelector("#project-date");
+        const link = document.querySelector("#project-link");
 
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
@@ -19,7 +20,8 @@ const AddProduct = () => {
                 description: projectdescription.value,
                 image: image.value,
                 gallery: urls,
-                projectdate: projectdate.value
+                projectdate: projectdate.value,
+                link: link
             };
             axios.post("https://lqm2cu-8080.preview.csb.app/api/project", newProject).then(() => {
                 router.navigate("/Admin/project");
@@ -80,12 +82,16 @@ const AddProduct = () => {
                         <div>
                             <label for="">Năm </label>
                             <input id="project-date" type="text" class="w-full py-4 px-3 outline-none rounded-md shadow-md mb-4"
-                                placeholder="Tên projects">
+                                placeholder="date">
                         </div>
                            <label for="">Description</label>
                            <textarea id="project-description" class="w-full py-4 px-3 outline-none rounded-md shadow-md mb-4" name="" id=""
                             cols="30" rows="7" placeholder="description"></textarea>
-
+                        <div>
+                            <label for="">link </label>
+                            <input id="project-link" type="text" class="w-full py-4 px-3 outline-none rounded-md shadow-md mb-4"
+                                placeholder="link">
+                        </div>
                            <div>
                              <button class="bg-red-500 px-3 py-2 rounded-md text-white hover:bg-red-600 deley-100">Nhập
                            lại</button>

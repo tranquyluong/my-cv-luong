@@ -1,5 +1,6 @@
 import { useEffect, useState } from "../../../lib"
 import axios from "axios";
+import listuer from "./listuser";
 const adminproductPage = () => {
 
     const [project, setproject] = useState([]);
@@ -21,7 +22,9 @@ const adminproductPage = () => {
             })
         }
     });
-    return ` <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    return ` 
+    ${listuer()}
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-8">
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <caption
                 class="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
@@ -37,10 +40,12 @@ const adminproductPage = () => {
                         Product name
                     </th>
 
-                    <th scope="col" class="px-6 py-3">
+                   
+                    
+                    <th>date</th>
+                     <th scope="col" class="px-6 py-3">
                         description
                     </th>
-                    <th>date</th>
                     <th>img </th>
                     <th scope="col" class="px-6 py-3">
                         <span class="sr-only">Edit</span>
@@ -61,6 +66,7 @@ const adminproductPage = () => {
                      <td class="px-6 py-4">
                       ${project.projectdate}
                     </td>
+                      
                    
                     <td>
                     <img src="${project.gallery}" class="w-[200px] p-2 ">
@@ -70,7 +76,7 @@ const adminproductPage = () => {
                       <a class="bg-green-500 px-2 py-1 btn-remove rounded-md text-white hover:bg-green-600 deley-100" data-id="${project.id}">xóa</a> ||      
                       <a class="bg-green-500 px-2 py-1 rounded-md text-white hover:bg-green-600 deley-100" href="/Admin/project/${project.id}/edit">Sửa</a>
                      </td>
-                 </tr>` })}
+                 </tr>` }).join("")}
 
             </tbody>
         </table>

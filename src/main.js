@@ -23,5 +23,6 @@ router.on("/Admin/project/add", () => render(AddProduct, app));
 router.on("/Admin/project/:id/edit", ({ data }) => render(() => editProduct(data), app));
 
 
-router.on("/project/:id", (data) => render(() => projectdetail(data), app));
+
+router.on("/project/:id", ({ data }) => render(() => projectdetail(data), app));
 router.resolve();

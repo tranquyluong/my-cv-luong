@@ -14,7 +14,7 @@ const product = () => {
                   <div class="justify-center font-bold  flex mt-8 ">
             <h2 class="md:text-left text-center text-5xl">Project</h2>
         </div>
-        <div id="productWorks" class="grid grid-cols-3 gap-8 mt-8 md:max-w-7xl mx-auto " >
+        <div id="productWorks" class="md:grid md:grid-cols-3 md:gap-8 mt-8 md:max-w-7xl mx-auto " >
           ${project.map((project) => {
 
     return `  <div class=" mb-2 hover:drop-shadow-2xl bg-blue-100 ">
@@ -22,7 +22,7 @@ const product = () => {
                     <img src="${project.gallery}" class="w-[100%] h-[300px]" alt="">
                   </div>
                  <div class="mx-4">
-                  <a>  <h3 class="font-bold text-[30px] ">${project.title}</h3></a>
+                  <a>  <h3 class="font-bold text-[30px] "><a href="/project/${project.id}">${project.title}</a></h3></a>
                     <div class="my-3">
                         <span class=" bg-[#142850] text-[#FFFFFF] rounded-xl px-2 w-[62px] text-[18px] ">${project.projectdate}</span>
                         <span class="text-[#8695A4] pl-2">Dashboard</span>
@@ -31,7 +31,7 @@ const product = () => {
                     
                    </div>
                 <div >
-                    <a href="project/${project.id}"><button class="w-full bg-red-400">view</button></a>
+                    <a href="/project/${project.id}" target="_blank"><button class="w-full bg-red-400">view</button></a>
                 </div>
               
             </div>
